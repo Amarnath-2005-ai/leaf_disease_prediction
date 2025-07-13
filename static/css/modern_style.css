@@ -456,7 +456,7 @@ body {
   margin-bottom: var(--space-lg);
 }
 
-/* Browse Button */
+/* Browse Button (Label styled as button) */
 .browse-btn {
   background: linear-gradient(135deg, var(--primary), var(--primary-light));
   border: none;
