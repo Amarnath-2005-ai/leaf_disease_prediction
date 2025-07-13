@@ -24,47 +24,17 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Browse button click event - PROPER BROWSING
-  const browseBtn = document.getElementById("browseBtn");
-  console.log("Browse button found:", browseBtn); // Debug log
-
-  if (browseBtn && fileInput) {
-    browseBtn.addEventListener("click", function (e) {
-      console.log("Browse button clicked!"); // Debug log
-      e.preventDefault();
-      e.stopPropagation();
-
-      // Try multiple ways to trigger file input
-      try {
-        fileInput.click();
-        console.log("File input clicked successfully");
-      } catch (error) {
-        console.error("Error clicking file input:", error);
-        // Fallback method
-        const event = new MouseEvent("click", {
-          view: window,
-          bubbles: true,
-          cancelable: true,
-        });
-        fileInput.dispatchEvent(event);
-      }
-    });
-
-    // Also add direct onclick as backup
-    browseBtn.onclick = function () {
-      console.log("Browse button onclick triggered");
-      fileInput.click();
-    };
-  } else {
-    console.error("Browse button or file input not found!", {
-      browseBtn,
-      fileInput,
-    });
-  }
+  // Removed JS click handler for browseBtn since label with for="fileInput" handles file dialog
 
   // Upload area click event (only for drag-drop area, not browse button)
   uploadArea.addEventListener("click", function (e) {
-    // Only trigger if not clicking the browse button
-    if (!e.target.closest(".browse-btn")) {
+    // Don't trigger if clicking the browse button or its children
+    if (e.target.closest(".browse-btn")) {
+      return; // Let the label handle the file input
+    }
+    
+    // Only trigger for clicks on the upload area itself
+    if (e.target === uploadArea || e.target.closest(".upload-content")) {
       e.preventDefault();
       e.stopPropagation();
       fileInput.click();

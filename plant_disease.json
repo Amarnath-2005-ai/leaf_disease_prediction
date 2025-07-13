@@ -1,197 +1,197 @@
 [
     {
         "name": "Apple___Apple_scab",
-        "cause": "Fungus Venturia inaequalis. Favorable conditions are cool, wet weather.",
-        "cure": "Use fungicides and resistant apple varieties. Prune and destroy infected leaves."
+        "cause": "Fungus Venturia inaequalis. Favorable conditions are cool, wet weather (60-70°F) with extended leaf wetness periods. Spores overwinter in fallen leaves and infected twigs. High humidity and poor air circulation promote disease spread. Common in spring and early summer during rainy periods.",
+        "cure": "Use fungicides (captan, myclobutanil) and resistant apple varieties like 'Liberty' or 'Enterprise'. Prune and destroy infected leaves and branches. Maintain good air circulation through proper spacing. Apply dormant sprays in early spring. Remove fallen leaves and debris. Use preventive fungicide applications during wet weather periods."
     },
     {
         "name": "Apple___Black_rot",
-        "cause": "Caused by the fungus Botryosphaeria obtusa.",
-        "cure": "Prune and remove infected areas. Apply fungicides during the growing season."
+        "cause": "Caused by the fungus Botryosphaeria obtusa. Infects through wounds, pruning cuts, or natural openings. Thrives in warm, humid conditions (75-85°F). Can survive in dead wood for years. Spreads through rain splash and wind. Common after hail damage or improper pruning. Weak trees are more susceptible.",
+        "cure": "Prune and remove infected areas, cutting 6-12 inches below visible symptoms. Apply fungicides (captan, thiophanate-methyl) during growing season. Avoid pruning during wet weather. Sterilize pruning tools between cuts. Remove and destroy all infected plant debris. Improve tree vigor through proper fertilization and irrigation."
     },
     {
         "name": "Apple___Cedar_apple_rust",
-        "cause": "Fungus Gymnosporangium juniperi-virginianae. Requires junipers as an alternate host.",
-        "cure": "Remove nearby juniper hosts. Use resistant varieties and fungicides."
+        "cause": "Fungus Gymnosporangium juniperi-virginianae. Requires junipers as an alternate host. Spores travel up to 2 miles from juniper hosts. Infects during spring rains when temperatures are 46-75°F. Requires 4-6 hours of leaf wetness for infection. Most severe when juniper hosts are within 2 miles of orchard.",
+        "cure": "Remove nearby juniper hosts within 2-mile radius if possible. Use resistant varieties like 'Liberty', 'Enterprise', 'GoldRush'. Apply fungicides (myclobutanil, triadimefon) at pink bud stage and 10-14 days later. Apply protective sprays during spring rains. Monitor weather conditions for infection periods."
     },
     {
         "name": "Apple___healthy",
-        "cause": "No disease present.",
-        "cure": "Maintain good cultural practices for optimal health."
+        "cause": "No disease present. Plant is in good health with proper cultural practices.",
+        "cure": "Maintain good cultural practices for optimal health: regular watering, proper fertilization, adequate sunlight, good air circulation, annual pruning, and monitoring for early signs of pests or diseases."
     },
     {
         "name": "Background_without_leaves",
-        "cause": "No disease or plant detected.",
-        "cure": "Not applicable."
+        "cause": "No disease or plant detected in the image.",
+        "cure": "Not applicable - no plant material present for analysis."
     },
     {
         "name": "Blueberry___healthy",
-        "cause": "No disease present.",
-        "cure": "Maintain good cultural practices for optimal health."
+        "cause": "No disease present. Blueberry plant is healthy and thriving.",
+        "cure": "Maintain good cultural practices for optimal health: acidic soil (pH 4.5-5.5), regular watering, proper pruning, adequate sunlight, and annual fertilization with acid-loving plant food."
     },
     {
         "name": "Cherry___Powdery_mildew",
-        "cause": "Fungus Podosphaera clandestina.",
-        "cure": "Apply sulfur-based or fungicide treatments. Ensure good air circulation."
+        "cause": "Fungus Podosphaera clandestina. Develops in warm, dry conditions with high humidity but no leaf wetness. Spreads rapidly in crowded plantings with poor air circulation. Favored by temperatures of 70-80°F. Can overwinter in infected buds and shoots. More severe in shaded areas.",
+        "cure": "Apply sulfur-based fungicides or synthetic fungicides (myclobutanil, trifloxystrobin). Ensure good air circulation through proper spacing and pruning. Remove and destroy infected plant parts. Apply preventive sprays before symptoms appear. Use resistant varieties when available. Avoid overhead irrigation."
     },
     {
         "name": "Cherry___healthy",
-        "cause": "No disease present.",
-        "cure": "Maintain good cultural practices for optimal health."
+        "cause": "No disease present. Cherry tree is healthy and disease-free.",
+        "cure": "Maintain good cultural practices for optimal health: well-drained soil, regular watering, annual pruning, proper fertilization, and monitoring for early signs of pests or diseases."
     },
     {
         "name": "Corn___Cercospora_leaf_spot Gray_leaf_spot",
-        "cause": "Fungus Cercospora zeae-maydis.",
-        "cure": "Use resistant hybrids and fungicide sprays."
+        "cause": "Fungus Cercospora zeae-maydis. Thrives in warm, humid conditions (75-85°F) with extended periods of leaf wetness. Spores spread by wind and rain splash. More severe in continuous corn fields. Overwinters in crop debris. Favored by high humidity and poor air circulation. Can cause significant yield loss.",
+        "cure": "Use resistant hybrids and fungicide sprays (azoxystrobin, pyraclostrobin). Practice crop rotation with non-host crops. Remove and destroy crop debris after harvest. Apply fungicides at tasseling stage if conditions are favorable. Monitor weather conditions for disease development. Use proper plant spacing for air circulation."
     },
     {
         "name": "Corn___Common_rust",
-        "cause": "Fungus Puccinia sorghi.",
-        "cure": "Apply fungicides and plant resistant varieties."
+        "cause": "Fungus Puccinia sorghi. Requires living host tissue to survive. Spores can travel long distances by wind. Favored by cool temperatures (60-70°F) and high humidity. More severe in late-planted corn. Can overwinter in southern regions. Spreads rapidly under favorable conditions. Often appears mid-season.",
+        "cure": "Apply fungicides (azoxystrobin, pyraclostrobin) and plant resistant varieties. Time fungicide applications based on disease development. Monitor weather conditions and disease pressure. Use early-maturing hybrids in areas with late-season rust pressure. Remove volunteer corn plants that may harbor the disease."
     },
     {
         "name": "Corn___Northern_Leaf_Blight",
-        "cause": "Fungus Exserohilum turcicum.",
-        "cure": "Use resistant varieties and fungicides."
+        "cause": "Fungus Exserohilum turcicum. Overwinters in crop debris and soil. Spores spread by wind and rain splash. Favored by moderate temperatures (65-80°F) and high humidity. More severe in continuous corn fields. Can survive in soil for several years. Often appears mid to late season. Can cause significant yield loss.",
+        "cure": "Use resistant varieties and fungicides (azoxystrobin, pyraclostrobin). Practice crop rotation with non-host crops. Remove and destroy crop debris after harvest. Apply fungicides at tasseling stage if conditions are favorable. Monitor weather conditions and disease pressure. Use proper plant spacing."
     },
     {
         "name": "Corn___healthy",
-        "cause": "No disease present.",
-        "cure": "Maintain good cultural practices for optimal health."
+        "cause": "No disease present. Corn plant is healthy and growing well.",
+        "cure": "Maintain good cultural practices for optimal health: well-drained soil, adequate nitrogen fertilization, proper spacing, regular watering, and monitoring for early signs of pests or diseases."
     },
     {
         "name": "Grape___Black_rot",
-        "cause": "Fungus Guignardia bidwellii.",
-        "cure": "Prune infected areas and apply fungicides."
+        "cause": "Fungus Guignardia bidwellii. Infects young, developing tissues during wet weather. Requires 6-12 hours of leaf wetness for infection. Spores overwinter in infected berries and canes. Favored by temperatures of 70-80°F. More severe in crowded vineyards with poor air circulation. Can cause complete crop loss if untreated.",
+        "cure": "Prune infected areas and apply fungicides (captan, myclobutanil). Remove and destroy all infected plant debris. Apply protective sprays during bloom and early fruit development. Improve air circulation through proper pruning and spacing. Use resistant varieties when available. Monitor weather conditions for infection periods."
     },
     {
         "name": "Grape___Esca_(Black_Measles)",
-        "cause": "Fungal complex including Phaeomoniella chlamydospora.",
-        "cure": "Remove infected wood. Avoid injuries to vines."
+        "cause": "Fungal complex including Phaeomoniella chlamydospora. Infects through pruning wounds and natural openings. Can remain latent for years before symptoms appear. Favored by stress conditions like drought or poor nutrition. More common in older vineyards. Spreads through contaminated pruning tools. Can cause vine decline and death.",
+        "cure": "Remove infected wood and sterilize pruning tools between cuts. Avoid injuries to vines during pruning. Use proper pruning techniques to minimize wound size. Apply wound protectants after pruning. Improve vine vigor through proper fertilization and irrigation. Remove and destroy severely infected vines."
     },
     {
         "name": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
-        "cause": "Fungus Pseudocercospora vitis.",
-        "cure": "Apply fungicides and manage vineyard hygiene."
+        "cause": "Fungus Pseudocercospora vitis. Thrives in warm, humid conditions with extended leaf wetness. Spores spread by wind and rain splash. More severe in crowded vineyards with poor air circulation. Can overwinter in infected leaves and canes. Favored by temperatures of 75-85°F. Can defoliate vines if untreated.",
+        "cure": "Apply fungicides (captan, myclobutanil) and manage vineyard hygiene. Remove and destroy infected leaves and canes. Improve air circulation through proper pruning and spacing. Apply protective sprays during periods of high humidity. Monitor weather conditions for disease development. Use resistant varieties when available."
     },
     {
         "name": "Grape___healthy",
-        "cause": "No disease present.",
-        "cure": "Maintain good cultural practices for optimal health."
+        "cause": "No disease present. Grape vine is healthy and thriving.",
+        "cure": "Maintain good cultural practices for optimal health: well-drained soil, proper pruning, adequate sunlight, good air circulation, regular fertilization, and monitoring for early signs of pests or diseases."
     },
     {
         "name": "Orange___Haunglongbing_(Citrus_greening)",
-        "cause": "Bacterium Candidatus Liberibacter spp. Spread by psyllid insects.",
-        "cure": "Control psyllid population and remove infected trees."
+        "cause": "Bacterium Candidatus Liberibacter spp. Spread by Asian citrus psyllid insects. Can also spread through grafting infected plant material. Bacteria multiply in the phloem tissue. Symptoms may not appear for months to years after infection. More severe in warm climates. Can affect all citrus varieties. No cure once infected.",
+        "cure": "Control psyllid population with insecticides and remove infected trees immediately. Use protective screens on young trees. Apply systemic insecticides to protect new growth. Remove and destroy infected trees to prevent spread. Monitor for psyllid activity regularly. Use certified disease-free planting material."
     },
     {
         "name": "Peach___Bacterial_spot",
-        "cause": "Bacterium Xanthomonas campestris pv. pruni.",
-        "cure": "Use resistant varieties and copper-based bactericides."
+        "cause": "Bacterium Xanthomonas campestris pv. pruni. Infects through natural openings and wounds. Spreads by wind-driven rain and contaminated tools. Favored by warm, wet weather (75-85°F). More severe in sandy soils with poor drainage. Can overwinter in infected buds and twigs. Often appears after spring rains.",
+        "cure": "Use resistant varieties and copper-based bactericides. Apply protective sprays during spring rains. Prune and remove infected branches. Avoid overhead irrigation. Improve air circulation through proper pruning. Use clean, sterilized pruning tools. Apply copper sprays at leaf fall and before bud break."
     },
     {
         "name": "Peach___healthy",
-        "cause": "No disease present.",
-        "cure": "Maintain good cultural practices for optimal health."
+        "cause": "No disease present. Peach tree is healthy and thriving.",
+        "cure": "Maintain good cultural practices for optimal health: well-drained soil, regular watering, annual pruning, proper fertilization, adequate sunlight, and monitoring for early signs of pests or diseases."
     },
     {
         "name": "Pepper,_bell___Bacterial_spot",
-        "cause": "Bacterium Xanthomonas campestris pv. vesicatoria.",
-        "cure": "Use copper-based bactericides and resistant varieties."
+        "cause": "Bacterium Xanthomonas campestris pv. vesicatoria. Infects through natural openings and wounds. Spreads by wind-driven rain, overhead irrigation, and contaminated tools. Favored by warm, humid conditions (75-85°F). More severe in crowded plantings with poor air circulation. Can survive in crop debris and soil.",
+        "cure": "Use copper-based bactericides and resistant varieties. Avoid overhead irrigation. Apply protective sprays during wet weather. Remove and destroy infected plants. Use clean, sterilized tools. Improve air circulation through proper spacing. Practice crop rotation with non-host crops. Use certified disease-free seed."
     },
     {
         "name": "Pepper,_bell___healthy",
-        "cause": "No disease present.",
-        "cure": "Maintain good cultural practices for optimal health."
+        "cause": "No disease present. Bell pepper plant is healthy and thriving.",
+        "cure": "Maintain good cultural practices for optimal health: well-drained soil, regular watering, proper fertilization, adequate sunlight, good air circulation, and monitoring for early signs of pests or diseases."
     },
     {
         "name": "Potato___Early_blight",
-        "cause": "Fungus Alternaria solani.",
-        "cure": "Apply fungicides and practice crop rotation."
+        "cause": "Fungus Alternaria solani. Thrives in warm, humid conditions with alternating wet and dry periods. Spores spread by wind and rain splash. More severe in stressed plants with poor nutrition. Can overwinter in crop debris and soil. Favored by temperatures of 75-85°F. Often appears mid-season after plant stress.",
+        "cure": "Apply fungicides (chlorothalonil, mancozeb) and practice crop rotation. Remove and destroy infected leaves. Maintain proper plant nutrition and irrigation. Use resistant varieties when available. Apply protective sprays during periods of high humidity. Improve air circulation through proper spacing. Remove crop debris after harvest."
     },
     {
         "name": "Potato___Late_blight",
-        "cause": "Pathogen Phytophthora infestans.",
-        "cure": "Use resistant varieties and fungicides."
+        "cause": "Pathogen Phytophthora infestans. Thrives in cool, wet conditions (60-70°F) with high humidity. Spores spread by wind and rain splash. Can develop rapidly under favorable conditions. More severe in crowded plantings with poor air circulation. Can overwinter in infected tubers and crop debris. Can cause complete crop loss.",
+        "cure": "Use resistant varieties and fungicides (chlorothalonil, mancozeb). Apply protective sprays during cool, wet weather. Remove and destroy infected plants immediately. Improve air circulation through proper spacing. Avoid overhead irrigation. Monitor weather conditions for disease development. Use certified disease-free seed potatoes."
     },
     {
         "name": "Potato___healthy",
-        "cause": "No disease present.",
-        "cure": "Maintain good cultural practices for optimal health."
+        "cause": "No disease present. Potato plant is healthy and thriving.",
+        "cure": "Maintain good cultural practices for optimal health: well-drained soil, regular watering, proper fertilization, adequate sunlight, good air circulation, and monitoring for early signs of pests or diseases."
     },
     {
         "name": "Raspberry___healthy",
-        "cause": "No disease present.",
-        "cure": "Maintain good cultural practices for optimal health."
+        "cause": "No disease present. Raspberry plant is healthy and thriving.",
+        "cure": "Maintain good cultural practices for optimal health: well-drained soil, regular watering, annual pruning, proper fertilization, adequate sunlight, and monitoring for early signs of pests or diseases."
     },
     {
         "name": "Soybean___healthy",
-        "cause": "No disease present.",
-        "cure": "Maintain good cultural practices for optimal health."
+        "cause": "No disease present. Soybean plant is healthy and thriving.",
+        "cure": "Maintain good cultural practices for optimal health: well-drained soil, proper inoculation with rhizobia bacteria, regular watering, adequate sunlight, and monitoring for early signs of pests or diseases."
     },
     {
         "name": "Squash___Powdery_mildew",
-        "cause": "Fungal pathogens including Erysiphe cichoracearum.",
-        "cure": "Apply sulfur-based fungicides and maintain good air circulation."
+        "cause": "Fungal pathogens including Erysiphe cichoracearum. Develops in warm, dry conditions with high humidity but no leaf wetness. Spreads rapidly in crowded plantings with poor air circulation. Favored by temperatures of 70-80°F. Can overwinter in infected plant debris. More severe in shaded areas. Often appears mid to late season.",
+        "cure": "Apply sulfur-based fungicides and maintain good air circulation. Remove and destroy infected plant parts. Apply preventive sprays before symptoms appear. Use resistant varieties when available. Avoid overhead irrigation. Improve air circulation through proper spacing. Apply fungicides at first sign of disease."
     },
     {
         "name": "Strawberry___Leaf_scorch",
-        "cause": "Fungus Diplocarpon earlianum.",
-        "cure": "Remove infected leaves and apply fungicides."
+        "cause": "Fungus Diplocarpon earlianum. Thrives in cool, wet conditions with high humidity. Spores spread by wind and rain splash. More severe in crowded plantings with poor air circulation. Can overwinter in infected leaves and plant debris. Favored by temperatures of 60-75°F. Often appears in spring and fall.",
+        "cure": "Remove infected leaves and apply fungicides (captan, myclobutanil). Improve air circulation through proper spacing and pruning. Remove and destroy infected plant debris. Apply protective sprays during cool, wet weather. Use resistant varieties when available. Avoid overhead irrigation. Monitor weather conditions."
     },
     {
         "name": "Strawberry___healthy",
-        "cause": "No disease present.",
-        "cure": "Maintain good cultural practices for optimal health."
+        "cause": "No disease present. Strawberry plant is healthy and thriving.",
+        "cure": "Maintain good cultural practices for optimal health: well-drained soil, regular watering, proper fertilization, adequate sunlight, good air circulation, and monitoring for early signs of pests or diseases."
     },
     {
         "name": "Tomato___Bacterial_spot",
-        "cause": "Bacterium Xanthomonas spp.",
-        "cure": "Apply copper-based bactericides and practice crop rotation."
+        "cause": "Bacterium Xanthomonas spp. Infects through natural openings and wounds. Spreads by wind-driven rain, overhead irrigation, and contaminated tools. Favored by warm, humid conditions (75-85°F). More severe in crowded plantings with poor air circulation. Can survive in crop debris and soil. Often appears after heavy rains.",
+        "cure": "Apply copper-based bactericides and practice crop rotation. Remove and destroy infected plants. Avoid overhead irrigation. Use clean, sterilized tools. Improve air circulation through proper spacing. Use certified disease-free seed. Apply protective sprays during wet weather. Remove crop debris after harvest."
     },
     {
         "name": "Tomato___Early_blight",
-        "cause": "Fungus Alternaria solani.",
-        "cure": "Apply fungicides and remove infected leaves."
+        "cause": "Fungus Alternaria solani. Thrives in warm, humid conditions with alternating wet and dry periods. Spores spread by wind and rain splash. More severe in stressed plants with poor nutrition. Can overwinter in crop debris and soil. Favored by temperatures of 75-85°F. Often appears mid-season after plant stress or drought.",
+        "cure": "Apply fungicides (chlorothalonil, mancozeb) and remove infected leaves. Maintain proper plant nutrition and irrigation. Use resistant varieties when available. Apply protective sprays during periods of high humidity. Improve air circulation through proper spacing. Remove crop debris after harvest. Practice crop rotation."
     },
     {
         "name": "Tomato___Late_blight",
-        "cause": "Pathogen Phytophthora infestans.",
-        "cure": "Use resistant varieties and fungicides."
+        "cause": "Pathogen Phytophthora infestans. Thrives in cool, wet conditions (60-70°F) with high humidity. Spores spread by wind and rain splash. Can develop rapidly under favorable conditions. More severe in crowded plantings with poor air circulation. Can overwinter in infected plant debris and soil. Can cause complete crop loss.",
+        "cure": "Use resistant varieties and fungicides (chlorothalonil, mancozeb). Apply protective sprays during cool, wet weather. Remove and destroy infected plants immediately. Improve air circulation through proper spacing. Avoid overhead irrigation. Monitor weather conditions for disease development. Use certified disease-free transplants."
     },
     {
         "name": "Tomato___Leaf_Mold",
-        "cause": "Fungus Passalora fulva.",
-        "cure": "Apply fungicides and ensure good ventilation."
+        "cause": "Fungus Passalora fulva. Thrives in high humidity conditions with poor air circulation. Spores spread by wind and water splash. More severe in greenhouse environments. Favored by temperatures of 70-80°F with 85-90% humidity. Can overwinter in infected plant debris. Often appears in crowded, humid conditions.",
+        "cure": "Apply fungicides (chlorothalonil, myclobutanil) and ensure good ventilation. Remove and destroy infected leaves. Improve air circulation through proper spacing and pruning. Reduce humidity levels in greenhouse environments. Apply protective sprays during periods of high humidity. Use resistant varieties when available."
     },
     {
         "name": "Tomato___Septoria_leaf_spot",
-        "cause": "Fungus Septoria lycopersici.",
-        "cure": "Remove infected leaves and apply fungicides."
+        "cause": "Fungus Septoria lycopersici. Thrives in warm, humid conditions with extended leaf wetness. Spores spread by wind and rain splash. More severe in crowded plantings with poor air circulation. Can overwinter in crop debris and soil. Favored by temperatures of 70-80°F. Often appears after periods of rain or overhead irrigation.",
+        "cure": "Remove infected leaves and apply fungicides (chlorothalonil, mancozeb). Improve air circulation through proper spacing and pruning. Avoid overhead irrigation. Apply protective sprays during wet weather. Remove crop debris after harvest. Practice crop rotation with non-host crops. Use resistant varieties when available."
     },
     {
         "name": "Tomato___Spider_mites Two-spotted_spider_mite",
-        "cause": "Spider mites Tetranychus urticae.",
-        "cure": "Use miticides or insecticidal soaps."
+        "cause": "Spider mites Tetranychus urticae. Thrive in hot, dry conditions with low humidity. Spread rapidly in stressed plants. Can reproduce quickly under favorable conditions. More severe in dusty conditions and crowded plantings. Often appear during drought stress. Can cause significant leaf damage and yield loss.",
+        "cure": "Use miticides or insecticidal soaps. Apply neem oil or horticultural oils. Increase humidity levels if possible. Remove and destroy heavily infested leaves. Use predatory mites for biological control. Apply miticides at first sign of infestation. Monitor regularly for early detection. Avoid broad-spectrum insecticides that kill beneficial insects."
     },
     {
         "name": "Tomato___Target_Spot",
-        "cause": "Fungus Corynespora cassiicola.",
-        "cure": "Apply fungicides and ensure good air circulation."
+        "cause": "Fungus Corynespora cassiicola. Thrives in warm, humid conditions with extended leaf wetness. Spores spread by wind and rain splash. More severe in crowded plantings with poor air circulation. Can overwinter in crop debris and soil. Favored by temperatures of 75-85°F. Often appears mid to late season.",
+        "cure": "Apply fungicides (chlorothalonil, azoxystrobin) and ensure good air circulation. Remove and destroy infected leaves. Improve air circulation through proper spacing and pruning. Apply protective sprays during periods of high humidity. Remove crop debris after harvest. Practice crop rotation with non-host crops."
     },
     {
         "name": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
-        "cause": "Virus spread by whiteflies.",
-        "cure": "Control whitefly population and use resistant varieties."
+        "cause": "Virus spread by whiteflies (Bemisia tabaci). Can also spread through grafting infected plant material. More severe in warm climates with high whitefly populations. Symptoms may not appear for 2-3 weeks after infection. Can affect all tomato varieties. No cure once infected. Can cause significant yield loss.",
+        "cure": "Control whitefly population with insecticides and remove infected plants immediately. Use reflective mulches to deter whiteflies. Apply systemic insecticides to protect new growth. Remove and destroy infected plants to prevent spread. Use resistant varieties when available. Monitor for whitefly activity regularly."
     },
     {
         "name": "Tomato___Tomato_mosaic_virus",
-        "cause": "Virus transmitted through contact and contaminated tools.",
-        "cure": "Remove infected plants and sterilize tools."
+        "cause": "Virus transmitted through contact and contaminated tools. Can also spread through grafting infected plant material and some seed transmission. More severe in stressed plants. Can survive in infected plant debris and soil. Often spreads through handling plants when wet. Can affect all tomato varieties. No cure once infected.",
+        "cure": "Remove infected plants and sterilize tools between plants. Use certified disease-free transplants. Avoid handling plants when wet. Disinfect tools with 10% bleach solution. Remove and destroy infected plant debris. Use resistant varieties when available. Practice good hygiene in the garden."
     },
     {
         "name": "Tomato___healthy",
-        "cause": "No disease present.",
-        "cure": "Maintain good cultural practices for optimal health."
+        "cause": "No disease present. Tomato plant is healthy and thriving.",
+        "cure": "Maintain good cultural practices for optimal health: well-drained soil, regular watering, proper fertilization, adequate sunlight, good air circulation, staking for support, and monitoring for early signs of pests or diseases."
     }
 ]
