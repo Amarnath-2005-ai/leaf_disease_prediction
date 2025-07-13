@@ -1,0 +1,15 @@
+# Core dependencies with wide Python compatibility (3.7–3.12+)
+
+Flask>=2.2.0,<4.0.0           # Flask 2.2+ supports modern features; 3.x works on 3.8+, so we give range
+tensorflow>=2.8.0,<2.16.0     # 2.8+ supports most use cases and Python versions up to 3.11
+numpy>=1.19.0,<1.27.0         # 1.19+ is widely compatible; 1.26+ needed for Python 3.12
+Pillow>=8.0.0,<11.0.0         # Image loading (load_img uses this under the hood)
+requests>=2.25.0,<3.0.0       # Stable across all modern Python versions
+tqdm>=4.60.0,<5.0.0           # Progress bars; compatible back to Python 3.6
+
+# Optional Flask dependencies (install automatically with Flask, but can be pinned if needed)
+Werkzeug>=2.2.0,<3.1.0
+Jinja2>=3.0.0,<4.0.0
+click>=8.0.0,<9.0.0
+itsdangerous>=2.0.0,<3.0.0
+MarkupSafe>=2.0.0,<3.0.0
