@@ -1,128 +1,247 @@
-<!DOCTYPE html>
-<html lang="en" data-bs-theme="light">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Plant Disease Recognition</title>
-    <link rel="icon" href="{{ url_for('static', filename='images/logo.svg') }}" type="image/svg+xml">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/modern_style.css') }}">
-</head>
-<body>
-    <!-- Background Image Container -->
-    <div class="background-container">
-        <div class="background-overlay"></div>
-        <div class="background-image bg1"></div>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/modern_style.css') }}"
+    />
+  </head>
+  <body>
+    <!-- Background Effects -->
+    <div class="bg-container">
+      <div class="gradient-bg"></div>
+      <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+      </div>
     </div>
 
-    <nav class="navbar navbar-expand-lg" data-bs-theme="light">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="{{ url_for('static', filename='images/logo.svg') }}" alt="" width="30" height="30" class="me-2">
-                <span>PLANT DISEASE RECOGNITION</span>
-            </a>
-            <button class="btn btn-outline-primary ms-auto" id="theme-toggle">
-                <i class="bi bi-moon-fill"></i>
-            </button>
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+      <div class="loading-content">
+        <div class="spinner"></div>
+        <p>Analyzing your plant image...</p>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <i class="bi bi-flower2"></i>
+            <span>PlantAI Detector</span>
+          </div>
         </div>
-    </nav>
+      </div>
+    </header>
 
-    <div class="container mt-5">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card main-card">
-                    <div class="card-body">
-                        <h1 class="text-center mb-4">Plant Disease Recognition</h1>
-                        
-                        <form action="/upload/" method="POST" enctype="multipart/form-data" class="upload-form">
-                            <div class="upload-area mb-4">
-                                <input type="file" class="form-control" accept="image/png, image/jpeg" name="img" required>
-                            </div>
-                            <div class="text-center">
-                                <button type="submit" class="btn btn-primary btn-lg">
-                                    <i class="bi bi-cloud-upload me-2"></i>Upload Image
-                                </button>
-                            </div>
-                        </form>
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="container">
+        <div class="content-wrapper">
+          <!-- Title Section -->
+          <div class="title-section">
+            <h1 class="main-title">Plant Disease Recognition</h1>
+            <p class="subtitle">
+              Advanced AI-powered plant disease detection and treatment
+              recommendations
+            </p>
+          </div>
 
-                        {% with messages = get_flashed_messages() %}
-                            {% if messages %}
-                                {% for message in messages %}
-                                    <div class="alert alert-info alert-dismissible fade show mt-3" role="alert">
-                                        {{ message }}
-                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                                    </div>
-                                {% endfor %}
-                            {% endif %}
-                        {% endwith %}
-
-                        {% if result %}
-                        <div class="result-container mt-4">
-                            <div class="card result-card">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="image-container">
-                                                <img src="{{imagepath}}" alt="uploaded image" class="result-image">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="result-details">
-                                                <h3 class="mb-3">{{prediction['name']}}</h3>
-                                                <div class="mb-3">
-                                                    <h5>Causes:</h5>
-                                                    <p>{{prediction['cause']}}</p>
-                                                </div>
-                                                <div>
-                                                    <h5>Treatment:</h5>
-                                                    <p>{{prediction['cure']}}</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        {% endif %}
+          <!-- Interactive Section -->
+          <div class="interactive-section" id="interactiveSection">
+            <!-- Upload Panel -->
+            <div class="upload-panel" id="uploadPanel">
+              <form
+                action="/upload/"
+                method="POST"
+                enctype="multipart/form-data"
+                id="uploadForm"
+              >
+                <div class="upload-area" id="uploadArea">
+                  <div class="upload-content">
+                    <div class="upload-icon">
+                      <i class="bi bi-cloud-arrow-up"></i>
                     </div>
+                    <div class="upload-text">
+                      <h3>Drop your plant image here</h3>
+                      <p>or use the browse button below</p>
+                      <span class="file-types">PNG, JPG, JPEG • Max 16MB</span>
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    class="browse-btn"
+                    id="browseBtn"
+                    onclick="document.getElementById('fileInput').click()"
+                  >
+                    <i class="bi bi-folder-open"></i>
+                    Browse Files
+                  </button>
+                  <input
+                    type="file"
+                    id="fileInput"
+                    name="img"
+                    accept="image/png,image/jpeg,image/jpg"
+                    required
+                    style="display: none"
+                  />
                 </div>
+
+                <!-- File Preview -->
+                <div
+                  class="file-preview"
+                  id="filePreview"
+                  style="display: none"
+                >
+                  <div class="preview-header">
+                    <span class="file-name" id="fileName"></span>
+                    <button type="button" class="remove-btn" id="removeBtn">
+                      <i class="bi bi-x-circle"></i>
+                    </button>
+                  </div>
+                  <div class="preview-container">
+                    <img id="previewImage" alt="Preview" />
+                  </div>
+                  <button type="submit" class="analyze-btn" id="analyzeBtn">
+                    <i class="bi bi-search"></i>
+                    <span>Analyze Plant</span>
+                  </button>
+                </div>
+              </form>
             </div>
+
+            <!-- Results Panel -->
+            <div class="results-panel" id="resultsPanel" style="display: none">
+              {% if result %}
+              <div class="results-content">
+                <div class="result-header">
+                  <h2>
+                    <i class="bi bi-check-circle-fill"></i> Analysis Complete
+                  </h2>
+                </div>
+
+                <div class="result-image">
+                  <img
+                    src="{{imagepath}}"
+                    alt="Analyzed plant"
+                    id="resultImage"
+                  />
+                  <button
+                    class="zoom-btn"
+                    onclick="openImageModal('{{imagepath}}')"
+                  >
+                    <i class="bi bi-zoom-in"></i>
+                  </button>
+                </div>
+
+                <div class="result-details">
+                  <div class="disease-info">
+                    <h3 class="disease-name">{{prediction['name']}}</h3>
+                    <div class="confidence-score">
+                      <i class="bi bi-award"></i>
+                      <span>High Confidence</span>
+                    </div>
+                  </div>
+
+                  <div class="info-cards">
+                    <div class="info-card causes-card">
+                      <div class="card-header">
+                        <i class="bi bi-exclamation-triangle-fill"></i>
+                        <h4>Causes</h4>
+                      </div>
+                      <p>{{prediction['cause']}}</p>
+                    </div>
+
+                    <div class="info-card treatment-card">
+                      <div class="card-header">
+                        <i class="bi bi-heart-pulse-fill"></i>
+                        <h4>Treatment</h4>
+                      </div>
+                      <p>{{prediction['cure']}}</p>
+                    </div>
+                  </div>
+
+                  <div class="action-buttons">
+                    <button
+                      class="action-btn secondary"
+                      onclick="window.location.href = '/'"
+                    >
+                      <i class="bi bi-arrow-clockwise"></i>
+                      Analyze Another
+                    </button>
+                    <button
+                      class="action-btn primary"
+                      onclick="downloadReport()"
+                    >
+                      <i class="bi bi-download"></i>
+                      Download Report
+                    </button>
+                  </div>
+                </div>
+              </div>
+              {% endif %}
+            </div>
+          </div>
+
+          <!-- Flash Messages -->
+          {% with messages = get_flashed_messages() %} {% if messages %}
+          <div class="flash-messages">
+            {% for message in messages %}
+            <div class="flash-message">
+              <i class="bi bi-info-circle"></i>
+              <span>{{ message }}</span>
+              <button class="close-btn" onclick="this.parentElement.remove()">
+                <i class="bi bi-x"></i>
+              </button>
+            </div>
+            {% endfor %}
+          </div>
+          {% endif %} {% endwith %}
         </div>
+      </div>
+    </main>
+
+    <!-- Image Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Plant Image Details</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img id="modalImage" class="img-fluid" alt="Plant image" />
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Theme toggle functionality
-        const themeToggle = document.getElementById('theme-toggle');
-        const html = document.documentElement;
-        const icon = themeToggle.querySelector('i');
-
-        // Check for saved theme preference
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme) {
-            html.setAttribute('data-bs-theme', savedTheme);
-            updateIcon(savedTheme);
-        }
-
-        themeToggle.addEventListener('click', () => {
-            const currentTheme = html.getAttribute('data-bs-theme');
-            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-            
-            html.setAttribute('data-bs-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            updateIcon(newTheme);
-        });
-
-        function updateIcon(theme) {
-            icon.className = theme === 'light' ? 'bi bi-moon-fill' : 'bi bi-sun-fill';
-        }
-
-        // Add animation classes
-        document.addEventListener('DOMContentLoaded', () => {
-            const mainCard = document.querySelector('.main-card');
-            mainCard.classList.add('fade-in');
-        });
-    </script>
-</body>
-</html> 
+    <script src="{{ url_for('static', filename='css/js/app.js') }}"></script>
+  </body>
+</html>
